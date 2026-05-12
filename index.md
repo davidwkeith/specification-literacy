@@ -222,7 +222,7 @@ AP CS A remains anchored at the Java layer. It teaches students to be the transl
 
 Specification literacy is not a skill introduced at a single grade level. It is a cognitive capacity that develops across childhood and adolescence, mapped to the same concrete-to-formal operational transition that Piaget identified and that every subject area navigates in its own way. Children are already practicing proto-specification in kindergarten; by high school, they can engage with formal verification. What changes across the K–12 span is not the *kind* of thinking but its *precision*, *scope*, and *abstraction*.
 
-The framework identifies four developmental bands. Each band describes what specification literacy looks like at that stage, what the central cognitive operation is, and how it manifests across subjects. The bands are not curriculum units — they are lenses through which existing instruction can be recognized, named, and strengthened.
+The framework identifies four developmental bands. Each band describes what specification literacy looks like at that stage, what the central cognitive operation is, and how it manifests across subjects. The bands are not curriculum units — they are lenses through which existing instruction can be recognized, named, and strengthened. A fifth band — adult learners and continuing education (§10.5) — extends the same progression past the end of formal schooling, where the disposition meets real organizational stakes. And although the disposition *develops* bottom-up, from kindergarten upward, the framework is best *deployed* top-down, beginning with adult learners and pushing validated materials down one band at a time — a deliberate inversion taken up in §13.
 
 ### 10.1 Band 1: K–2 — The Gap Between What I Meant and What I Said
 
@@ -338,7 +338,37 @@ Students don't need a dedicated specification literacy course at this level — 
 
 *Knitting and fiber arts:* "K2, P2, repeat to end" is a specification in a domain-specific language with zero ambiguity for the practitioner — and total opacity for anyone who doesn't know the language. The gauge swatch is literally a verification step: knit a test sample and measure it against the specification before committing to the full project. This is the Verification Principle enacted in fiber.
 
-### 10.5 The Through-Line
+### 10.5 Band 5: Adult Learners — Specification Under Stakes
+
+**Central cognitive operation:** Writing, delegating, and verifying specifications in real organizational contexts — where the interpreter, whether an AI, a colleague, or a vendor, acts on your behalf with autonomy, and the cost of underspecification lands immediately on you.
+
+**Developmental stage:** Post-formal, pragmatic reasoning. Adults can hold several things at once that earlier bands cannot: that a specification is *simultaneously* precise and negotiated, that "correct" is stakeholder-dependent rather than fixed, and that a specification is a revisable artifact rather than a final answer. The catch is a developmental irony — deep domain expertise tends to come with *low* meta-awareness of one's own tacit assumptions. The expert knows so much that has become automatic that the knowledge no longer feels like an assumption at all; it feels like the way things obviously are. This is the expert's curse, and it is the precise mechanism of underspecification described in §2, now operating in someone who is, by every other measure, highly competent. The pedagogical opportunity is that the expertise *is* the underspecification: the more an adult knows about their field, the more they leave unsaid, and the more there is to surface.
+
+**What specification literacy looks like at this stage:**
+
+There are no grades and no teacher to resolve an ambiguity by fiat. The stakes are intrinsic — the adult's actual work either improves or it does not, and the feedback comes from clients, managers, vendors, regulators, and the AI systems they direct, not from a rubric. The disposition shows up as a habit: before handing something off, the adult pauses to ask what the interpreter will have to decide that was left undecided. The verification question at this band is: *"When I hand this to an AI that will act on it, how do I know — before the consequences land — that it did what I needed?"*
+
+**Cross-domain manifestations:**
+
+*Knowledge work and drafting:* Prompting an LLM is spec-writing — the Sandwich Challenge moved to the desk of a working professional. "Summarize this for the board" leaves the interpreter to decide for whom, at what level of detail, foregrounding what and dropping what. The adult who is surprised by the summary wrote an underspecified prompt; the adult who got what they needed had already decided those things and said so.
+
+*Law:* AI-assisted contract review and e-discovery search-term design are specification tasks with immediate consequences. "Relevant" is the new "room temperature" — it feels obvious to the attorney who wrote it and resolves differently in the hands of the tool that runs it. The cost of the gap is measured in privilege review and sanctions, not in a returned assignment.
+
+*Software and IT:* Tickets, product requirements documents, and acceptance criteria are specifications handed to implementers — increasingly AI implementers. Reviewing AI-generated code at work is the §4 Verification Principle as a daily professional obligation: the code is the beginning, not the end, and the engineer who merges it without being able to explain why it is correct has not finished the job.
+
+*Marketing and communications:* A campaign brief that specifies audience, message, channel, constraints, and what success looks like is a specification; "make it pop" is not. The difference is who gets to decide — the person who wrote the brief, or whoever or whatever executes it.
+
+*Data and analytics:* "Pull our top customers" — top by revenue, by margin, by lifetime value; over what period; excluding what segments — leaves the analyst to encode choices the requester never stated. The SQL that comes back is a correct execution of an underspecified request, and the disagreement that follows is a specification gap, not a query error.
+
+*Operations and procurement:* RFPs, statements of work, service-level agreements, and "reasonable efforts" clauses are §10.4's legal-studies content, now lived rather than simulated. The defined-terms section is still a set of type declarations; the conditions precedent are still preconditions; but the dispute is real and the money is real.
+
+*Management:* Delegating to a person is writing a specification. The manager who is surprised by what an employee delivered has an underspecification problem, not a bad employee — the instruction relied on context the manager never made explicit, exactly as a methods section relies on a laboratory's unstated room temperature. Recognizing this reframes a great deal of supervisory friction as a specification literacy issue with a specification literacy fix.
+
+*Civic and personal life, at adult stakes:* Filing an insurance claim, disputing a bill, instructing a contractor — each is a specification handed to an interpreter with their own defaults and incentives. The adult who can state precisely what they are claiming, what they are disputing, and what "done" looks like fares better than the one who assumes the other party will fill the gaps the way they would.
+
+**Teacher's role:** Surface the expert's buried assumptions — "you said 'obviously the Q3 numbers'; obvious to whom, and which Q3?" — and do it relentlessly, because the assumptions are invisible to the person who holds them. Treat the learners as **co-designers** rather than students receiving content: they bring real artifacts from their jobs — a prompt that misfired, a brief that produced the wrong thing, a contract clause that got litigated — and the class works on those. The formal vehicle for this band is documented separately, exactly as the 8th-grade anchor course is — the De Anza contract-education course outline (`docs/de-anza-course-outline.md`) — which adapts the framework's pedagogy to working adults: a verification-journal assessment, between-session field assignments at the learner's actual workplace, and a running read-and-trace code thread so that every adult gets at least one taste of *provable* verification and feels its contrast with the merely-plausible verification that dominates professional life.
+
+### 10.6 The Through-Line
 
 The through-line from kindergarten to 12th grade is: **how precisely can you describe what you mean, and how do you know whether what happened matches what you meant?** Every subject teaches this. The framework names it. The anchor course formalizes it. And every subsequent class benefits because students arrive knowing how to ask "what did I assume that I didn't say?"
 
