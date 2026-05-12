@@ -380,8 +380,9 @@ The developmental progression is not a sequence of courses. It is a sequence of 
 | 3–5 | Write multi-step instructions and test them | "Did someone else get the same result from your steps?" |
 | 6–8 | Systematically audit assumptions and categorize failure modes | "What kinds of gaps should you look for?" |
 | 9–12 | Apply formal specification methods within each discipline | "What does this domain's notation leave unspecified?" |
+| Adult / Continuing Ed | Specify, delegate, and verify under real stakes — when the interpreter acts with autonomy on your behalf | "When I hand this off and it acts for me, how do I know — before the consequences land — that it did what I needed?" |
 
-Each capacity builds on the previous one. A high school student who has never noticed the gap between intention and result (K–2 capacity) cannot systematically audit assumptions (6–8 capacity). A student who has practiced all four arrives at college, at a job, or at a voting booth with the disposition and the method to think precisely about what they want and whether they got it.
+Each capacity builds on the previous one. A high school student who has never noticed the gap between intention and result (K–2 capacity) cannot systematically audit assumptions (6–8 capacity). A student who has practiced all four arrives at college, at a job, or at a voting booth with the disposition and the method to think precisely about what they want and whether they got it. And an adult who never developed the earlier capacities — who arrives in the workforce without them — can still build them, now under stakes that make the lesson land hard and fast; the fifth capacity is the same skill, exercised where the consequences are no longer hypothetical.
 
 ---
 
