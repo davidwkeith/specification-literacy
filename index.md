@@ -535,7 +535,53 @@ If a principal or curriculum coordinator wanted to introduce specification liter
 
 ---
 
-## 13. Conclusion
+## 13. Deployment: Where to Start
+
+A framework that describes a developmental progression invites an obvious assumption: that it should be built in the order children encounter it — start with the kindergartners, then the elementary grades, then middle school, then high school, and let the adult extension follow whenever it follows. That assumption is wrong, and getting it wrong would cost a generation. This section names the tension between the order in which the disposition *develops* and the order in which the framework should be *deployed*, and argues that deployment must run top-down: begin with adult learners at a community college, validate the pedagogy there, and push the proven materials down one band at a time.
+
+### 13.1 The Developmental Order Is Not the Deployment Order
+
+Specification literacy develops bottom-up. A high school senior cannot apply domain-specific formalism if they never learned, in elementary school, to write a procedure someone else could follow; an adult cannot specify under stakes if no one ever named the gap between intention and result. The bands in §10 describe a real cognitive sequence, and nothing in this section disputes it.
+
+But the order in which a capacity matures in a person is not the order in which a curriculum should be created, tested, and rolled out. The two are easily conflated and must not be. A piece of pedagogy is only as good as the evidence that it works, and evidence is generated fastest where the feedback loop is shortest, the participants can consent, and the institutional path to running the next revision is clearest. Those conditions are met not in kindergarten but in adult and continuing education. So the resolution is straightforward: build and validate from the top — adult learners first — and migrate downward as each band's materials are proven. The disposition is constructed in a child from the bottom up; the framework that teaches it is constructed by its authors from the top down. There is no contradiction, only a distinction that has to be held clearly.
+
+### 13.2 Why Community College, Specifically
+
+The first instance of this framework outside the already-designed 8th-grade anchor course should be an adult cohort at a community college. Four reasons converge on that choice.
+
+*Urgency.* The labor market is repricing skills now, not in thirteen years. The people who most need specification literacy *this year* are working adults who are already, untrained, writing specifications to AI systems that act on their behalf — and the institution built to serve exactly those people is the open-access, workforce-facing community college. To start anywhere else is to start with the population whose need is least immediate.
+
+*Autonomy and consent.* Adults enroll voluntarily, can drop a course they find unhelpful, can push back on an exercise that misses, and can give informed feedback as peers rather than as subjects. Piloting a new pedagogy on minors raises consent, equity, and human-subjects concerns that an adult cohort sidesteps entirely. The instinct that it is "easier to experiment with adults" is correct, but the right way to state it is not "experiment on" — it is *iterate with consenting co-designers*. We can move fast precisely because we are not moving fast on anyone who cannot say no; the obligation to a child who cannot consent is discharged by getting the thing right before it ever reaches them.
+
+*A tight feedback loop.* Adults bring real work artifacts — a prompt that misfired, a brief that produced the wrong thing, a contract clause that got litigated — so the §4 verification loop closes inside a single quarter. A kindergarten cohort, by contrast, will not reveal whether the framework produced specification-literate adults for roughly thirteen years. One of those timescales permits revision; the other does not.
+
+*Low institutional friction.* A contract or continuing-education offering launches without curriculum-committee approval, without a Course Outline of Record, without state-standards alignment or textbook adoption. That means the cycle of run, debrief, revise, and run again can happen in consecutive quarters rather than across academic years. Speed of iteration is the whole point, and the contract-education pathway is where iteration is fastest.
+
+The concrete first instance is **De Anza College**, where the author intends to teach an open-enrollment cohort of working professionals from mixed fields as a volunteer, through the contract and Community-Education pathway. The course outline for that cohort and the plan for evaluating it are documented separately, as the 8th-grade anchor course is — see `docs/de-anza-course-outline.md` for the course and `docs/pilot-plan.md` for the pilot and evaluation design.
+
+### 13.3 The Top-Down Sequence
+
+Deployment proceeds in phases, with a gate between each phase: the next phase does not begin until the current one has produced the evidence that justifies it.
+
+**Phase 0, now.** The De Anza contract-education pilot — an open professional cohort, real workplace artifacts, a verification-journal assessment. *Gate:* do adults reliably show the four Verification-Principle behaviors — specify before generating, evaluate against the spec rather than against "seems fine," explain why a verified solution is correct, identify its limits — after a quarter, and do they report that their actual work changed? If not, the framework is revised and the pilot is re-run before anything moves downward.
+
+**Phase 1: the adult track scales, and high-school pilots begin.** The adult course expands — more sections, employer cohorts, a transfer-credit version — and, in parallel, high-school pilots start. The high-school phase does not start from zero: the 9–12 band already exists in §10.4, and there is already a worked high-school instance of the student-as-architect model — `davidwkeith/ap-cs-a-capstone`, "The Java Architect Capstone," in which students architect a text-adventure game as a written specification, hand the specification to a custom AI builder, and then verify and iterate, with a final walkthrough at which they must explain every line and "the AI wrote it" earns the lowest band. The De Anza materials adapt *down* to the high-school band — its nearest neighbor — alongside that capstone as a template. *Gate:* high-school teachers can run it without the course author in the room.
+
+**Phase 2: stand up the 8th-grade anchor course.** The already-designed *Introduction to Problem Architecture* (§10.3) launches, informed by the lessons of the high-school pilots. This is where the "named introduction" lands — the dedicated course that gives the skill its vocabulary and formal methods — exactly where the framework already says it belongs, but now reached after the bands above it have been validated rather than before.
+
+**Phase 3: elementary, grades 3–5.** The §12 "practices that cost nothing" — spec before you start, peer verification, name the assumptions — become a structured strand rather than a set of optional habits, and elementary teachers are trained to run it. Some of those teachers will have come through the adult track themselves.
+
+**Phase 4: K–2.** By the time the framework reaches kindergarten, there is a decade of materials, a trained-teacher pipeline, and accumulated evidence behind it. The kindergartner who draws a different house from the same instruction meets a teacher who knows exactly what is happening and exactly what to do with it.
+
+Each phase feeds the next in a way that is more than sequential. Adult learners who are also teachers and parents carry the disposition downward into their own classrooms and homes; the pilot cohort is therefore not merely the first audience but part of the rollout mechanism. The framework propagates the way the disposition itself does — through people who have it teaching people who do not.
+
+### 13.4 Why Not Bottom-Up
+
+The obvious alternative is to start in kindergarten and build upward, matching the developmental order. It fails on every dimension that matters. The first beneficiaries of a K-first rollout graduate in roughly thirteen years, and the AI transition will not wait thirteen years for them. A K-first rollout also conducts its first experiments on the population least able to consent, with the longest feedback loop of any band, and through the hardest institutional path — state standards, curriculum committees, textbook adoption — so revisions that an adult cohort absorbs in a quarter take years to reach a classroom. Top-down deployment de-risks all of it: it puts the unproven version in front of consenting adults whose feedback is immediate, validates the pedagogy where validation is cheap and fast, and only then carries the proven version to the children for whom the stakes of getting it wrong are highest and the ability to object is lowest.
+
+---
+
+## 14. Conclusion
 
 The question this framework answers is not "should students learn to code?" It is: in a world where AI systems interpret human intent at scale, what skills must every person have to maintain agency over the systems that act on their behalf?
 
