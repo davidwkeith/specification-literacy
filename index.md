@@ -218,9 +218,9 @@ AP CS A remains anchored at the Java layer. It teaches students to be the transl
 
 ---
 
-## 10. The K–12 Developmental Progression
+## 10. The Developmental Progression: K–12 and Beyond
 
-Specification literacy is not a skill introduced at a single grade level. It is a cognitive capacity that develops across childhood and adolescence, mapped to the same concrete-to-formal operational transition that Piaget identified and that every subject area navigates in its own way. Children are already practicing proto-specification in kindergarten; by high school, they can engage with formal verification. What changes across the K–12 span is not the *kind* of thinking but its *precision*, *scope*, and *abstraction*.
+Specification literacy is not a skill introduced at a single grade level. It is a cognitive capacity that develops across childhood and adolescence — and continues developing into adult professional life, mapped to the same concrete-to-formal operational transition that Piaget identified and that every subject area navigates in its own way. Children are already practicing proto-specification in kindergarten; by high school, they can engage with formal verification. What changes across the K–12 span is not the *kind* of thinking but its *precision*, *scope*, and *abstraction*.
 
 The framework identifies four developmental bands. Each band describes what specification literacy looks like at that stage, what the central cognitive operation is, and how it manifests across subjects. The bands are not curriculum units — they are lenses through which existing instruction can be recognized, named, and strengthened. A fifth band — adult learners and continuing education (§10.5) — extends the same progression past the end of formal schooling, where the disposition meets real organizational stakes. And although the disposition *develops* bottom-up, from kindergarten upward, the framework is best *deployed* top-down, beginning with adult learners and pushing validated materials down one band at a time — a deliberate inversion taken up in §13.
 
@@ -370,7 +370,7 @@ There are no grades and no teacher to resolve an ambiguity by fiat. The stakes a
 
 ### 10.6 The Through-Line
 
-The through-line from kindergarten to 12th grade is: **how precisely can you describe what you mean, and how do you know whether what happened matches what you meant?** Every subject teaches this. The framework names it. The anchor course formalizes it. And every subsequent class benefits because students arrive knowing how to ask "what did I assume that I didn't say?"
+The through-line — from kindergarten through 12th grade and on into working life — is: **how precisely can you describe what you mean, and how do you know whether what happened matches what you meant?** Every subject teaches this. The framework names it. The anchor course formalizes it. And every subsequent class benefits because students arrive knowing how to ask "what did I assume that I didn't say?"
 
 The developmental progression is not a sequence of courses. It is a sequence of *capacities*:
 
