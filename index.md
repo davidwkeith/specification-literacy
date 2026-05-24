@@ -214,15 +214,15 @@ A population that cannot specify what it wants from AI systems will get whatever
 
 **The anchor course supersedes AP Computer Science A, not supplements it.** Every generation of programming abstraction has redefined the human's role. Assembly programmers managed registers and memory addresses. C programmers managed types and pointers. Java programmers managed objects and inheritance. At each transition, the previous generation's core skill became a detail handled by the new abstraction layer, and the human's job moved up — from managing machine state, to managing program structure, to managing system design. Specification with AI is the next such transition. The human specifies *what* the solution must do and *why* it is correct. The AI handles *how* — the syntax, the implementation details, the language-specific idioms.
 
-AP CS A remains anchored at the Java layer. It teaches students to be the translator — to convert algorithmic intent into syntactically correct code in a specific language. The anchor course teaches students to be the architect — to define what needs to be built, verify that it was built correctly, and understand why the design works. A student who completes the anchor course covers the same algorithmic topics as AP CS A — and more broadly, since the course is not constrained by a single language's idioms. But they engage with those topics at the specification and verification layer rather than the syntax layer.
+AP CS A remains anchored at the Java layer. It teaches students to be the translator — to convert algorithmic intent into syntactically correct code in a specific language. The anchor course teaches students to be the architect — to define what needs to be built, verify that it was built correctly, and understand why the design works. A student who completes the anchor course covers the same algorithmic topics as AP CS A — and more broadly, since the course is not constrained by a single language's idioms. But they engage with those topics at the specification and verification layer rather than the syntax layer. A worked instance of this student-as-architect model already exists at the high-school level, layered onto AP CS A itself: students architect a text-adventure game as a written specification, an AI builder generates it, and the team must explain every line at a walkthrough.[^7]
 
 ---
 
-## 10. The K–12 Developmental Progression
+## 10. The Developmental Progression: K–12 and Beyond
 
-Specification literacy is not a skill introduced at a single grade level. It is a cognitive capacity that develops across childhood and adolescence, mapped to the same concrete-to-formal operational transition that Piaget identified and that every subject area navigates in its own way. Children are already practicing proto-specification in kindergarten; by high school, they can engage with formal verification. What changes across the K–12 span is not the *kind* of thinking but its *precision*, *scope*, and *abstraction*.
+Specification literacy is not a skill introduced at a single grade level. It is a cognitive capacity that develops across childhood and adolescence — and continues developing into adult professional life, mapped to the same concrete-to-formal operational transition that Piaget identified and that every subject area navigates in its own way. Children are already practicing proto-specification in kindergarten; by high school, they can engage with formal verification. What changes across the K–12 span is not the *kind* of thinking but its *precision*, *scope*, and *abstraction*.
 
-The framework identifies four developmental bands. Each band describes what specification literacy looks like at that stage, what the central cognitive operation is, and how it manifests across subjects. The bands are not curriculum units — they are lenses through which existing instruction can be recognized, named, and strengthened.
+The framework identifies four developmental bands. Each band describes what specification literacy looks like at that stage, what the central cognitive operation is, and how it manifests across subjects. The bands are not curriculum units — they are lenses through which existing instruction can be recognized, named, and strengthened. A fifth band — adult learners and continuing education (§10.5) — extends the same progression past the end of formal schooling, where the disposition meets real organizational stakes. And although the disposition *develops* bottom-up, from kindergarten upward, the framework is best *deployed* top-down, beginning with adult learners and pushing validated materials down one band at a time — a deliberate inversion taken up in §13.
 
 ### 10.1 Band 1: K–2 — The Gap Between What I Meant and What I Said
 
@@ -324,7 +324,7 @@ Students don't need a dedicated specification literacy course at this level — 
 
 *English/composition:* A research paper's methodology section is a specification for how evidence was gathered and analyzed. "I searched the internet" is underspecified. "I searched JSTOR and Google Scholar for peer-reviewed articles published between 2015 and 2024 using the search terms X, Y, and Z, excluding editorials and opinion pieces" is a reproducible specification. A student who can write the second version can also *read* a research methodology critically — which is media literacy.
 
-*Computer science:* AP CS A teaches specification literacy implicitly through Java: students read specifications (APIs, Javadocs) and implement them. The anchor course's reversal — write the spec and tests first, hand to someone else to implement, assess where the spec broke — is the natural progression. Students who took the anchor course in 8th grade arrive at AP CS A understanding *why* Javadoc specifies preconditions, postconditions, and exception behavior — they've written these contracts themselves. Post-AP capstone projects can assess specification literacy directly: define a data structure, file format, simulation, API, or transformation pipeline precisely enough that a classmate can implement it from the spec alone.
+*Computer science:* AP CS A teaches specification literacy implicitly through Java: students read specifications (APIs, Javadocs) and implement them. The anchor course's reversal — write the spec and tests first, hand to someone else to implement, assess where the spec broke — is the natural progression. Students who took the anchor course in 8th grade arrive at AP CS A understanding *why* Javadoc specifies preconditions, postconditions, and exception behavior — they've written these contracts themselves. Post-AP capstone projects can assess specification literacy directly: define a data structure, file format, simulation, API, or transformation pipeline precisely enough that a classmate can implement it from the spec alone. A worked instance of this already exists at the high-school level — students architect a text-adventure game as a written specification, an AI builder generates it, and the team must verify the result and explain every line of it at a walkthrough, with "the AI wrote it" graded as the lowest band.[^7]
 
 *Legal studies / civics:* Contract drafting is specification. Defined terms are type declarations. Conditions precedent are preconditions. Indemnification clauses are error handling. "Reasonable efforts" is the legal equivalent of "room temperature" — underspecified until litigated. Mock trial preparation is specification-and-verification applied to argumentation: the prosecution specifies a theory of the case, the defense tests it against the evidence, and the jury verifies.
 
@@ -338,9 +338,39 @@ Students don't need a dedicated specification literacy course at this level — 
 
 *Knitting and fiber arts:* "K2, P2, repeat to end" is a specification in a domain-specific language with zero ambiguity for the practitioner — and total opacity for anyone who doesn't know the language. The gauge swatch is literally a verification step: knit a test sample and measure it against the specification before committing to the full project. This is the Verification Principle enacted in fiber.
 
-### 10.5 The Through-Line
+### 10.5 Band 5: Adult Learners — Specification Under Stakes
 
-The through-line from kindergarten to 12th grade is: **how precisely can you describe what you mean, and how do you know whether what happened matches what you meant?** Every subject teaches this. The framework names it. The anchor course formalizes it. And every subsequent class benefits because students arrive knowing how to ask "what did I assume that I didn't say?"
+**Central cognitive operation:** Writing, delegating, and verifying specifications in real organizational contexts — where the interpreter, whether an AI, a colleague, or a vendor, acts on your behalf with autonomy, and the cost of underspecification lands immediately on you.
+
+**Developmental stage:** Post-formal, pragmatic reasoning. Adults can hold several things at once that earlier bands cannot: that a specification is *simultaneously* precise and negotiated, that "correct" is stakeholder-dependent rather than fixed, and that a specification is a revisable artifact rather than a final answer. The catch is a developmental irony — deep domain expertise tends to come with *low* meta-awareness of one's own tacit assumptions. The expert knows so much that has become automatic that the knowledge no longer feels like an assumption at all; it feels like the way things obviously are. This is the expert's curse, and it is the precise mechanism of underspecification described in §2, now operating in someone who is, by every other measure, highly competent. The pedagogical opportunity is that the expertise *is* the underspecification: the more an adult knows about their field, the more they leave unsaid, and the more there is to surface.
+
+**What specification literacy looks like at this stage:**
+
+There are no grades and no teacher to resolve an ambiguity by fiat. The stakes are intrinsic — the adult's actual work either improves or it does not, and the feedback comes from clients, managers, vendors, regulators, and the AI systems they direct, not from a rubric. The disposition shows up as a habit: before handing something off, the adult pauses to ask what the interpreter will have to decide that was left undecided. The verification question at this band is: *"When I hand this to an AI that will act on it, how do I know — before the consequences land — that it did what I needed?"*
+
+**Cross-domain manifestations:**
+
+*Knowledge work and drafting:* Prompting an LLM is spec-writing — the Sandwich Challenge moved to the desk of a working professional. "Summarize this for the board" leaves the interpreter to decide for whom, at what level of detail, foregrounding what and dropping what. The adult who is surprised by the summary wrote an underspecified prompt; the adult who got what they needed had already decided those things and said so.
+
+*Law:* AI-assisted contract review and e-discovery search-term design are specification tasks with immediate consequences. "Relevant" is the new "room temperature" — it feels obvious to the attorney who wrote it and resolves differently in the hands of the tool that runs it. The cost of the gap is measured in privilege review and sanctions, not in a returned assignment.
+
+*Software and IT:* Tickets, product requirements documents, and acceptance criteria are specifications handed to implementers — increasingly AI implementers. Reviewing AI-generated code at work is the §4 Verification Principle as a daily professional obligation: the code is the beginning, not the end, and the engineer who merges it without being able to explain why it is correct has not finished the job.
+
+*Marketing and communications:* A campaign brief that specifies audience, message, channel, constraints, and what success looks like is a specification; "make it pop" is not. The difference is who gets to decide — the person who wrote the brief, or whoever or whatever executes it.
+
+*Data and analytics:* "Pull our top customers" — top by revenue, by margin, by lifetime value; over what period; excluding what segments — leaves the analyst to encode choices the requester never stated. The SQL that comes back is a correct execution of an underspecified request, and the disagreement that follows is a specification gap, not a query error.
+
+*Operations and procurement:* RFPs, statements of work, service-level agreements, and "reasonable efforts" clauses are §10.4's legal-studies content, now lived rather than simulated. The defined-terms section is still a set of type declarations; the conditions precedent are still preconditions; but the dispute is real and the money is real.
+
+*Management:* Delegating to a person is writing a specification. The manager who is surprised by what an employee delivered has an underspecification problem, not a bad employee — the instruction relied on context the manager never made explicit, exactly as a methods section relies on a laboratory's unstated room temperature. Recognizing this reframes a great deal of supervisory friction as a specification literacy issue with a specification literacy fix.
+
+*Civic and personal life, at adult stakes:* Filing an insurance claim, disputing a bill, instructing a contractor — each is a specification handed to an interpreter with their own defaults and incentives. The adult who can state precisely what they are claiming, what they are disputing, and what "done" looks like fares better than the one who assumes the other party will fill the gaps the way they would.
+
+**Teacher's role:** Surface the expert's buried assumptions — "you said 'obviously the Q3 numbers'; obvious to whom, and which Q3?" — and do it relentlessly, because the assumptions are invisible to the person who holds them. Treat the learners as **co-designers** rather than students receiving content: they bring real artifacts from their jobs — a prompt that misfired, a brief that produced the wrong thing, a contract clause that got litigated — and the class works on those. The formal vehicle for this band is documented separately, exactly as the 8th-grade anchor course is — the De Anza contract-education course outline (`docs/de-anza-course-outline.md`) — which adapts the framework's pedagogy to working adults: a verification-journal assessment, between-session field assignments at the learner's actual workplace, and a running read-and-trace code thread so that every adult gets at least one taste of *provable* verification and feels its contrast with the merely-plausible verification that dominates professional life.
+
+### 10.6 The Through-Line
+
+The through-line — from kindergarten through 12th grade and on into working life — is: **how precisely can you describe what you mean, and how do you know whether what happened matches what you meant?** Every subject teaches this. The framework names it. The anchor course formalizes it. And every subsequent class benefits because students arrive knowing how to ask "what did I assume that I didn't say?"
 
 The developmental progression is not a sequence of courses. It is a sequence of *capacities*:
 
@@ -350,8 +380,9 @@ The developmental progression is not a sequence of courses. It is a sequence of 
 | 3–5 | Write multi-step instructions and test them | "Did someone else get the same result from your steps?" |
 | 6–8 | Systematically audit assumptions and categorize failure modes | "What kinds of gaps should you look for?" |
 | 9–12 | Apply formal specification methods within each discipline | "What does this domain's notation leave unspecified?" |
+| Adult / Continuing Ed | Specify, delegate, and verify under real stakes — when the interpreter acts with autonomy on your behalf | "When I hand this off and it acts for me, how do I know — before the consequences land — that it did what I needed?" |
 
-Each capacity builds on the previous one. A high school student who has never noticed the gap between intention and result (K–2 capacity) cannot systematically audit assumptions (6–8 capacity). A student who has practiced all four arrives at college, at a job, or at a voting booth with the disposition and the method to think precisely about what they want and whether they got it.
+Each capacity builds on the previous one. A high school student who has never noticed the gap between intention and result (K–2 capacity) cannot systematically audit assumptions (6–8 capacity). A student who has practiced all four arrives at college, at a job, or at a voting booth with the disposition and the method to think precisely about what they want and whether they got it. And an adult who never developed the earlier capacities — who arrives in the workforce without them — can still build them, now under stakes that make the lesson land hard and fast; the fifth capacity is the same skill, exercised where the consequences are no longer hypothetical.
 
 ---
 
@@ -504,7 +535,53 @@ If a principal or curriculum coordinator wanted to introduce specification liter
 
 ---
 
-## 13. Conclusion
+## 13. Deployment: Where to Start
+
+A framework that describes a developmental progression invites an obvious assumption: that it should be built in the order children encounter it — start with the kindergartners, then the elementary grades, then middle school, then high school, and let the adult extension follow whenever it follows. That assumption is wrong, and getting it wrong would cost a generation. This section names the tension between the order in which the disposition *develops* and the order in which the framework should be *deployed*, and argues that deployment must run top-down: begin with adult learners at a community college, validate the pedagogy there, and push the proven materials down one band at a time.
+
+### 13.1 The Developmental Order Is Not the Deployment Order
+
+Specification literacy develops bottom-up. A high school senior cannot apply domain-specific formalism if they never learned, in elementary school, to write a procedure someone else could follow; an adult cannot specify under stakes if no one ever named the gap between intention and result. The bands in §10 describe a real cognitive sequence, and nothing in this section disputes it.
+
+But the order in which a capacity matures in a person is not the order in which a curriculum should be created, tested, and rolled out. The two are easily conflated and must not be. A piece of pedagogy is only as good as the evidence that it works, and evidence is generated fastest where the feedback loop is shortest, the participants can consent, and the institutional path to running the next revision is clearest. Those conditions are met not in kindergarten but in adult and continuing education. So the resolution is straightforward: build and validate from the top — adult learners first — and migrate downward as each band's materials are proven. The disposition is constructed in a child from the bottom up; the framework that teaches it is constructed by its authors from the top down. There is no contradiction, only a distinction that has to be held clearly.
+
+### 13.2 Why Community College, Specifically
+
+The first instance of this framework outside the already-designed 8th-grade anchor course should be an adult cohort at a community college. Four reasons converge on that choice.
+
+*Urgency.* The labor market is repricing skills now, not in thirteen years. The people who most need specification literacy *this year* are working adults who are already, untrained, writing specifications to AI systems that act on their behalf — and the institution built to serve exactly those people is the open-access, workforce-facing community college. To start anywhere else is to start with the population whose need is least immediate.
+
+*Autonomy and consent.* Adults enroll voluntarily, can drop a course they find unhelpful, can push back on an exercise that misses, and can give informed feedback as peers rather than as subjects. Piloting a new pedagogy on minors raises consent, equity, and human-subjects concerns that an adult cohort sidesteps entirely. The instinct that it is "easier to experiment with adults" is correct, but the right way to state it is not "experiment on" — it is *iterate with consenting co-designers*. We can move fast precisely because we are not moving fast on anyone who cannot say no; the obligation to a child who cannot consent is discharged by getting the thing right before it ever reaches them.
+
+*A tight feedback loop.* Adults bring real work artifacts — a prompt that misfired, a brief that produced the wrong thing, a contract clause that got litigated — so the §4 verification loop closes inside a single quarter. A kindergarten cohort, by contrast, will not reveal whether the framework produced specification-literate adults for roughly thirteen years. One of those timescales permits revision; the other does not.
+
+*Low institutional friction.* A contract or continuing-education offering launches without curriculum-committee approval, without a Course Outline of Record, without state-standards alignment or textbook adoption. That means the cycle of run, debrief, revise, and run again can happen in consecutive quarters rather than across academic years. Speed of iteration is the whole point, and the contract-education pathway is where iteration is fastest.
+
+The concrete first instance is **De Anza College**, where the author intends to teach an open-enrollment cohort of working professionals from mixed fields as a volunteer, through the contract and Community-Education pathway. The course outline for that cohort and the plan for evaluating it are documented separately, as the 8th-grade anchor course is — see `docs/de-anza-course-outline.md` for the course and `docs/pilot-plan.md` for the pilot and evaluation design.
+
+### 13.3 The Top-Down Sequence
+
+Deployment proceeds in phases, with a gate between each phase: the next phase does not begin until the current one has produced the evidence that justifies it.
+
+**Phase 0, now.** The De Anza contract-education pilot — an open professional cohort, real workplace artifacts, a verification-journal assessment. *Gate:* do adults reliably show the four Verification-Principle behaviors — specify before generating, evaluate against the spec rather than against "seems fine," explain why a verified solution is correct, identify its limits — after a quarter, and do they report that their actual work changed? If not, the framework is revised and the pilot is re-run before anything moves downward.
+
+**Phase 1: the adult track scales, and high-school pilots begin.** The adult course expands — more sections, employer cohorts, a transfer-credit version — and, in parallel, high-school pilots start. The high-school phase does not start from zero: the 9–12 band already exists in §10.4, and there is already a worked high-school instance of the student-as-architect model — [`davidwkeith/ap-cs-a-capstone`](https://github.com/davidwkeith/ap-cs-a-capstone), "The Java Architect Capstone"[^7] — in which students architect a text-adventure game as a written specification, hand the specification to a custom AI builder, and then verify and iterate, with a final walkthrough at which they must explain every line and "the AI wrote it" earns the lowest band. The De Anza materials adapt *down* to the high-school band — its nearest neighbor — alongside that capstone as a template. *Gate:* high-school teachers can run it without the course author in the room.
+
+**Phase 2: stand up the 8th-grade anchor course.** The already-designed *Introduction to Problem Architecture* (§10.3) launches, informed by the lessons of the high-school pilots. This is where the "named introduction" lands — the dedicated course that gives the skill its vocabulary and formal methods — exactly where the framework already says it belongs, but now reached after the bands above it have been validated rather than before.
+
+**Phase 3: elementary, grades 3–5.** The §12 "practices that cost nothing" — spec before you start, peer verification, name the assumptions — become a structured strand rather than a set of optional habits, and elementary teachers are trained to run it. Some of those teachers will have come through the adult track themselves.
+
+**Phase 4: K–2.** By the time the framework reaches kindergarten, there is a decade of materials, a trained-teacher pipeline, and accumulated evidence behind it. The kindergartner who draws a different house from the same instruction meets a teacher who knows exactly what is happening and exactly what to do with it.
+
+Each phase feeds the next in a way that is more than sequential. Adult learners who are also teachers and parents carry the disposition downward into their own classrooms and homes; the pilot cohort is therefore not merely the first audience but part of the rollout mechanism. The framework propagates the way the disposition itself does — through people who have it teaching people who do not.
+
+### 13.4 Why Not Bottom-Up
+
+The obvious alternative is to start in kindergarten and build upward, matching the developmental order. It fails on every dimension that matters. The first beneficiaries of a K-first rollout graduate in roughly thirteen years, and the AI transition will not wait thirteen years for them. A K-first rollout also conducts its first experiments on the population least able to consent, with the longest feedback loop of any band, and through the hardest institutional path — state standards, curriculum committees, textbook adoption — so revisions that an adult cohort absorbs in a quarter take years to reach a classroom. Top-down deployment de-risks all of it: it puts the unproven version in front of consenting adults whose feedback is immediate, validates the pedagogy where validation is cheap and fast, and only then carries the proven version to the children for whom the stakes of getting it wrong are highest and the ability to object is lowest.
+
+---
+
+## 14. Conclusion
 
 The question this framework answers is not "should students learn to code?" It is: in a world where AI systems interpret human intent at scale, what skills must every person have to maintain agency over the systems that act on their behalf?
 
@@ -531,3 +608,5 @@ Reading gave citizens access to the ideas of others. Writing gave citizens the a
 [^5]: Mars Climate Orbiter Mishap Investigation Board Phase I Report, NASA, November 10, 1999.
 
 [^6]: Wing, J.M. "Computational Thinking." *Communications of the ACM* 49(3), 33–35 (2006).
+
+[^7]: David W. Keith, "The Java Architect Capstone," https://github.com/davidwkeith/ap-cs-a-capstone — a high-school AP CS A capstone in which students architect a text-adventure game as a written specification, an AI builder generates it, and students verify and must explain every line at a walkthrough.
