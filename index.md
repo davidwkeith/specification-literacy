@@ -34,19 +34,19 @@ This phenomenon is documented across every discipline that has studied it.
 
 In 2017, the U.S. Court of Appeals for the First Circuit ruled that a missing Oxford comma in a Maine overtime statute created sufficient ambiguity to change the statute's meaning. The law exempted workers involved in "the canning, processing, preserving, freezing, drying, marketing, storing, packing for shipment or distribution of" certain foods. Without a comma after "shipment," it was unclear whether "distribution" was a separate exempt activity or part of "packing for shipment or distribution." The resulting settlement cost the employer $5 million.[^1]
 
-The legal philosopher H.L.A. Hart described this phenomenon in 1958: natural language has a "core of certainty" and a "penumbra of doubt."[^2] Contract law exists, in substantial part, to manage the penumbra — to force parties to specify their assumptions before disputes arise. The entire field of statutory interpretation is a systematic response to underspecification in legal texts.
+The legal philosopher H.L.A. Hart described this phenomenon in 1958: legal language has a core of settled meaning surrounded by a "penumbra" of cases where its application is genuinely in doubt.[^2] Contract law exists, in substantial part, to manage the penumbra — to force parties to specify their assumptions before disputes arise. The entire field of statutory interpretation is a systematic response to underspecification in legal texts.
 
 ### 2.2 In Science
 
 The reproducibility crisis in science is, in significant measure, an underspecification crisis. A 2016 survey in *Nature* found that more than 70% of researchers had failed to reproduce another scientist's experiments.[^3] While some irreproducibility reflects fraud or statistical errors, a substantial portion stems from methods sections that appear complete to their authors but contain unspecified parameters.
 
-A 2021 paper in *BioTechniques* demonstrated that the common instruction "incubate at room temperature" is a specification failure. Laboratories vary from 18°C to 25°C depending on geography, season, and building design. For temperature-sensitive reactions — enzyme kinetics, microbial growth, RNA degradation — this range can alter experimental outcomes.[^4] The researcher writing "room temperature" believed the instruction was clear because their own laboratory's temperature felt obvious to them. The underspecification was invisible from the inside.
+A 2021 paper in *BioTechniques* demonstrated that the common instruction "incubate at room temperature" is a specification failure. "Room temperature" has no single agreed value — standards bodies typically define it as 20–25°C, but actual laboratories drift above and below that band depending on geography, season, and building design. For temperature-sensitive reactions — enzyme kinetics, microbial growth, RNA degradation — this range can alter experimental outcomes.[^4] The researcher writing "room temperature" believed the instruction was clear because their own laboratory's temperature felt obvious to them. The underspecification was invisible from the inside.
 
 ### 2.3 In Engineering
 
 On September 23, 1999, NASA's Mars Climate Orbiter was destroyed during orbital insertion. The proximate cause was a unit mismatch: ground software produced by Lockheed Martin calculated thruster impulse in pound-force seconds, while NASA's trajectory software expected newton-seconds. The error was a factor of 4.45, accumulated over months of small trajectory corrections, and ultimately sent the spacecraft into the Martian atmosphere at 57 kilometers altitude instead of the intended 226 kilometers.[^5]
 
-The interface specification did not explicitly state which unit system to use. Both teams used valid units. Both teams' software was internally correct. The failure was in the specification of the interface between them — a gap that both teams assumed was obvious and neither team documented. The cost was $125 million.
+The interface specification did not explicitly state which unit system to use. Both teams used valid units. Both teams' software was internally correct. The failure was in the specification of the interface between them — a gap that both teams assumed was obvious and neither team documented. The lost orbiter cost roughly $125 million to build, out of a total mission cost of $327 million.
 
 NASA's subsequent investigation identified the root cause not as a unit error but as a failure in systems engineering: the processes and reviews that should have caught the underspecification did not. The specification was not wrong — it was incomplete. And its incompleteness was invisible to the people who wrote it.
 
@@ -597,9 +597,9 @@ Reading gave citizens access to the ideas of others. Writing gave citizens the a
 
 ## Notes
 
-[^1]: O'Connor v. Oakhurst Dairy, 851 F.3d 69 (1st Cir. 2017). Settled for $5 million in 2018.
+[^1]: O'Connor v. Oakhurst Dairy, 851 F.3d 69 (1st Cir. 2017). Settled for $5 million in 2018 on behalf of 127 drivers. Maine subsequently amended the statute to remove the ambiguity; the revision suggests the legislature's original intent aligned with the employer's reading, underscoring that the drivers prevailed on the text's ambiguity rather than on what the legislature meant.
 
-[^2]: H.L.A. Hart, "Positivism and the Separation of Law and Morals," *Harvard Law Review* 71(4), 593–629 (1958).
+[^2]: H.L.A. Hart, "Positivism and the Separation of Law and Morals," *Harvard Law Review* 71(4), 593–629 (1958), where Hart develops the "open texture" of legal rules and the "penumbra" of doubtful cases. The frequently quoted paired phrasing — a "core of certainty" and a "penumbra of doubt" — is from his later *The Concept of Law* (Oxford University Press, 1961), ch. VII.
 
 [^3]: Baker, M. "1,500 scientists lift the lid on reproducibility." *Nature* 533, 452–454 (2016).
 
