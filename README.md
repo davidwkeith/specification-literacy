@@ -43,4 +43,4 @@ This is a draft framework document (v3, April 2026). The first real-world instan
 
 ## License
 
-No license has been specified yet. All rights reserved by the author pending a license decision.
+[CC0 1.0 Universal](LICENSE) — dedicated to the public domain. Copy, adapt, translate, and teach from it, for any purpose, without asking or crediting.
