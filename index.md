@@ -2,8 +2,6 @@
 
 ## A K–12 Framework for Teaching Precise Thinking Across Subjects and Developmental Stages
 
-**Draft v3 · April 2026**
-
 ---
 
 > **Abstract:** This document presents the philosophical foundation for teaching specification literacy across K–12 education — the discipline of describing problems precisely enough that any interpreter, human or machine, will produce the same result. We argue that specification literacy is a foundational skill on par with information literacy and data literacy, and that it develops across a progression from early childhood ("what I meant vs. what I said") through high school ("formal verification of complex systems"). The framework identifies four developmental bands (K–2, 3–5, 6–8, 9–12), maps specification literacy to existing subjects at each band, and presents an anchor course — *Introduction to Problem Architecture*, a year-long 8th-grade course using algorithms and AI — as a proof-of-concept for explicit instruction. The underlying phenomenon — underspecification — is universal across disciplines, and the skills this framework develops transfer to science, law, engineering, communication, and civic life. Specification literacy is not a new subject to be added to an already overcrowded curriculum; it is a disposition that strengthens every subject already taught.
