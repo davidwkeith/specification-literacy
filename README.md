@@ -20,6 +20,7 @@ Two ideas anchor the framework:
 | [`index.md`](index.md) | The main framework document — the philosophical case, the underspecification problem, the four K–12 developmental bands plus an adult band, cross-curricular integration, a practical guide for any teacher, and the top-down deployment strategy. |
 | [`docs/de-anza-course-outline.md`](docs/de-anza-course-outline.md) | *Problem Architecture for Working Professionals* — the adult anchor course outline for a De Anza College contract-education cohort. |
 | [`docs/pilot-plan.md`](docs/pilot-plan.md) | Pilot and evaluation plan for the De Anza Phase 0 cohort. |
+| [`docs/explicit-instruction.md`](docs/explicit-instruction.md) | How specification literacy maps onto Explicit Instruction (Rosenshine; Archer & Hughes), and a lesson-design protocol for teachers who use both. |
 | [`docs/specs/`](docs/specs/) | Design documents for major additions to the framework. |
 | [`docs/plans/`](docs/plans/) | Implementation plans corresponding to those designs. |
 

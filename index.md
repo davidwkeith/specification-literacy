@@ -533,6 +533,10 @@ If a principal or curriculum coordinator wanted to introduce specification liter
 
 5. **The side effect is better questions.** Students may start asking for clearer instructions, pushing back on ambiguous rubrics, or requesting explicit evaluation criteria. This is not insubordination. It is the skill working.
 
+### 12.7 The Lesson Plan Is a Specification Too
+
+Everything in this section applies to the teacher's own work. A lesson plan is a specification whose interpreters are students, and a misconception is a divergent interpretation, or what we call a hallucination when LLMs do the same. The research tradition of *Explicit Instruction* (Rosenshine's *Principles of Instruction*; Archer and Hughes's sixteen elements) has studied this problem for decades under another name. [`docs/explicit-instruction.md`](docs/explicit-instruction.md) maps the two frameworks onto each other and gives a lesson-design protocol: run the Assumption Audit on your own plan, choose examples and non-examples at the boundaries, and write checks for understanding as tests that reveal which misreading each student holds.
+
 ---
 
 ## 13. Deployment: Where to Start
