@@ -40,7 +40,7 @@ The 6–8 band is formalized in an anchor course, *Introduction to Problem Archi
 
 ## Status
 
-This is a draft framework document (v3, April 2026). The first real-world instance is a Phase 0 adult cohort at De Anza College; see the pilot plan for the evaluation design.
+This is a draft framework document; its revision history lives in git. The first real-world instance is a Phase 0 adult cohort at De Anza College; see the pilot plan for the evaluation design.
 
 ## License
 

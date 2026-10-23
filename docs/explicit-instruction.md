@@ -2,7 +2,7 @@
 
 ## Why a specification-literate teacher writes better lesson plans
 
-**Draft · October 2026** · Companion to [`../index.md`](../index.md)
+Companion to [`../index.md`](../index.md)
 
 ---
 
