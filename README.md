@@ -18,8 +18,8 @@ Two ideas anchor the framework:
 | File | What it is |
 |------|------------|
 | [`index.md`](index.md) | The main framework document — the philosophical case, the underspecification problem, the four K–12 developmental bands plus an adult band, cross-curricular integration, a practical guide for any teacher, and the top-down deployment strategy. |
-| [`docs/de-anza-course-outline.md`](docs/de-anza-course-outline.md) | *Problem Architecture for Working Professionals* — the adult anchor course outline for a De Anza College contract-education cohort. |
-| [`docs/pilot-plan.md`](docs/pilot-plan.md) | Pilot and evaluation plan for the De Anza Phase 0 cohort. |
+| [`docs/continuing-ed-course-outline.md`](docs/continuing-ed-course-outline.md) | *Problem Architecture for Working Professionals* — the adult anchor course outline, a continuing-education course that any community college can offer. |
+| [`docs/pilot-plan.md`](docs/pilot-plan.md) | Pilot and evaluation plan for the Phase 0 cohort. |
 | [`docs/explicit-instruction.md`](docs/explicit-instruction.md) | How specification literacy maps onto Explicit Instruction (Rosenshine; Archer & Hughes), and a lesson-design protocol for teachers who use both. |
 | [`docs/specs/`](docs/specs/) | Design documents for major additions to the framework. |
 | [`docs/plans/`](docs/plans/) | Implementation plans corresponding to those designs. |
@@ -40,7 +40,7 @@ The 6–8 band is formalized in an anchor course, *Introduction to Problem Archi
 
 ## Status
 
-This is a draft framework document; its revision history lives in git. The first real-world instance is a Phase 0 adult cohort at De Anza College; see the pilot plan for the evaluation design.
+This is a draft framework document; its revision history lives in git. The first real-world instance is a Phase 0 adult cohort in a community-college continuing-education class; see the pilot plan for the evaluation design.
 
 ## License
 

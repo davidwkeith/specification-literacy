@@ -13,7 +13,7 @@ The framework applies to its own documents: write so that a careful reader can't
 | Path | Role |
 |------|------|
 | `index.md` | The main framework document. Numbered sections (§1–§14) and footnotes. Other files cite it by section number. |
-| `docs/de-anza-course-outline.md` | Adult anchor course (Band 5). |
+| `docs/continuing-ed-course-outline.md` | Adult anchor course (Band 5), a community-college continuing-education class. |
 | `docs/pilot-plan.md` | Pilot and evaluation plan for that course. |
 | `docs/explicit-instruction.md` | How the framework maps onto Explicit Instruction (Rosenshine; Archer & Hughes; Engelmann). |
 | `docs/specs/`, `docs/plans/` | Dated design documents and their implementation plans. These are **historical records**: don't revise them to match later changes. |
@@ -26,7 +26,7 @@ The framework applies to its own documents: write so that a careful reader can't
 - **Use the framework's own terms, and use them consistently.** These have fixed meanings; don't paraphrase them into near-synonyms:
   - *underspecification* (§2)
   - *the Verification Principle*: specify, evaluate, explain, identify limits (§4)
-  - *the Assumption Audit*, with its four questions: Types, Boundaries, Defaults, Context (`docs/de-anza-course-outline.md`, Session 2)
+  - *the Assumption Audit*, with its four questions: Types, Boundaries, Defaults, Context (`docs/continuing-ed-course-outline.md`, Session 2)
   - *the expert's curse* (§10.5)
   - the five developmental *bands* (§10)
 - **Footnotes for sources.** Use Markdown footnotes (`[^1]` in `index.md`; named footnotes such as `[^archer]` are fine in `docs/`), collected under a `## Notes` heading at the end of the file. Give the author, title, venue, year, and a URL where there is one.
